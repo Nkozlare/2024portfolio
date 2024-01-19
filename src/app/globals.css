@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.progress-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: #043b32;
+  transform-origin: 0%;
+  z-index: 60;
+}
+
+.square-container {
+  width: 1000px; /* Adjust as needed */
+  height: 1000px; /* Adjust as needed */
+  border: 1px solid rgb(142, 142, 142);
+  position: relative; /* For positioning the square */
+}
+
+.square {
+  width: 50px; /* Adjust as needed */
+  height: 50px; /* Adjust as needed */
+  background-color: blue;
+  border-radius: 50%;
+  position: absolute; /* Allow movement within the container */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the square */
+}
