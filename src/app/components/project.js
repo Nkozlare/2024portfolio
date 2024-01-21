@@ -50,7 +50,7 @@ export default function Project({
           height="500"
           width="500"
           className="absolute inset-0 min-w-full min-h-full object-cover duration-500 ease-out transition-all hover:scale-110"
-          alt="geometric wall pattern"
+          alt={project.alt}
         />
       </div>
     </motion.div>

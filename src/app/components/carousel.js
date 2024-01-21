@@ -27,7 +27,7 @@ function Item({ item, activeIndex, i, hover, setHover }) {
         height="1000"
         width="1000"
         className="absolute inset-0 min-w-full min-h-full object-cover"
-        alt="geometric wall pattern"
+        alt={item.alt}
       />
       <div
         className={`absolute inset-0 min-w-full transition-all duration-500 min-h-full object-cover ${

@@ -1,8 +1,6 @@
 "use client";
 import Carousel from "../components/carousel";
-import SquareElement from "../components/game";
 import { Alex_Brush } from "next/font/google";
-import SideAnimation from "../components/sideAnimation";
 import { useInView, motion } from "framer-motion";
 import { useState, useRef } from "react";
 
@@ -16,21 +14,25 @@ export default function About() {
       title: "Me",
       desc: "A 6'3 nerd that drinks coffee, plays WoW, climbs fake indoor rocks and plays volleyball.",
       image: "/me.jpeg",
+      alt: "A profile picture of Nick Kozlarek",
     },
     {
       title: "My wife and myself",
       desc: "A not-as-tall triathlete nerd that is better at climbing fake rocks than I am. We like to travel. (She placed second in this triathlon).",
       image: "/us.jpeg",
+      alt: "A picture of Molly Kozlarek in Triathlon gear",
     },
     {
       title: "My dog",
       desc: "A border collie mutt that understands a shocking amount of english. We got him while we were staying in Southern Africa.",
       image: "/dog.jpeg",
+      alt: "a picture of a border collie mix",
     },
     {
       title: "Music",
       desc: "I am a mediocre musician. I use to be in bands you have never heard of. 'What I lack in skill I make up for in intensity' -Jack Black",
       image: "/guitar.jpeg",
+      alt: "Nick Kozlarek playing the guitar and singing",
     },
   ];
   return (
