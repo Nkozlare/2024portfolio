@@ -13,29 +13,24 @@ export default function About() {
   const isInView = useInView(ref, { once: true });
   let content = [
     {
-      title: "This is a title 1",
-      desc: "This is a longddddtion of the thing in the title",
-      image: "/portfoliobg.jpg",
+      title: "Me",
+      desc: "A 6'3 nerd that drinks coffee, plays WoW, climbs fake indoor rocks and plays volleyball.",
+      image: "/me.jpeg",
     },
     {
-      title: "This is a title 2",
-      desc: "This is a longer heycription of the thing in the title",
-      image: "/portfoliobg.jpg",
+      title: "My wife and myself",
+      desc: "A not-as-tall triathlete nerd that is better at climbing fake rocks. We like to travel (She placed second in this triathlon).",
+      image: "/us.jpeg",
     },
     {
-      title: "This is a title 3",
-      desc: "This is a longer dchangingtion of the thing in the title",
-      image: "/portfoliobg.jpg",
+      title: "My dog",
+      desc: "A border collie mutt that understands a shocking amount of english. We got him while we were staying in Southern Africa.",
+      image: "/dog.jpeg",
     },
     {
-      title: "This is a title 4",
-      desc: "This is a longer dhmmme thing in the title",
-      image: "/portfoliobg.jpg",
-    },
-    {
-      title: "This is a title 5",
-      desc: "This is a longerME1 of the thing in the title",
-      image: "/portfoliobg.jpg",
+      title: "Music",
+      desc: "I am a has-been musician. I use to be in bands you have never heard of. 'What I lack in skill I make up for in intensity' -Jack Black",
+      image: "/guitar.jpeg",
     },
   ];
   return (
@@ -61,7 +56,9 @@ export default function About() {
           }}
           className="flex flex-col justify-center items-center relative"
         >
-          <p className={`text-lg min-w-full italic text-right pb-8`}>
+          <p
+            className={`text-lg min-w-full italic text-right pb-8 text-secondary-light`}
+          >
             Nick Kozlarek to be specific
           </p>
         </motion.div>

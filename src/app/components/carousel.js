@@ -5,7 +5,7 @@ import { useState } from "react";
 function Item({ item, activeIndex, i, hover, setHover }) {
   return (
     <div
-      className={`overflow-hidden relative flex flex-col min-w-full transition-all items-end justify-end lg:min-h-[40rem] max-lg:min-h-[20rem]`}
+      className={`overflow-hidden rounded-lg relative flex flex-col transition-all items-end justify-end lg:min-h-[40vw] min-w-full max-lg:min-h-[20rem]`}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
@@ -17,7 +17,7 @@ function Item({ item, activeIndex, i, hover, setHover }) {
       <div
         className={`${
           !hover ? "text-text" : "text-transparent"
-        } transition-all absolute bottom-0 right-0 duration-500 z-20 text-right max-md:max-w-[80vw]`}
+        } transition-all absolute bottom-0 right-0 duration-500 z-20 text-right max-md:max-w-[80vw] md:max-w-[60vw]`}
       >
         <p className="z-20 text-4xl uppercase">{item.title}</p>
         <p className="z-20 text-xl">{item.desc}</p>
@@ -30,7 +30,7 @@ function Item({ item, activeIndex, i, hover, setHover }) {
         alt="geometric wall pattern"
       />
       <div
-        className={`absolute inset-0 min-w-full min-h-full object-cover ${
+        className={`absolute inset-0 min-w-full transition-all duration-500 min-h-full object-cover ${
           !hover ? "bg-black/40" : "bg-transparent"
         }`}
       ></div>
@@ -76,8 +76,10 @@ export default function Carousel({ content }) {
       </div>
 
       <div
-        className={`absolute transition-all bottom-0 left-5 ${
-          activeIndex !== 0 ? "text-text" : "text-transparent"
+        className={`absolute transition-all p-2 lg:bottom-[50%] max-lg:bottom-0 left-5 ${
+          activeIndex !== 0
+            ? "text-text bg-dark/50 rounded-lg"
+            : "text-transparent"
         }`}
         onClick={() => {
           if (activeIndex !== 0) {
@@ -103,9 +105,9 @@ export default function Carousel({ content }) {
         </svg>
       </div>
       <div
-        className={`absolute transition-all bottom-0 right-5 ${
+        className={`absolute transition-all lg:bottom-[50%] max-lg:bottom-0 p-2 right-5 ${
           activeIndex !== (content.length - 1) * -1
-            ? "text-text"
+            ? "text-text bg-dark/70 rounded-lg "
             : "text-transparent"
         }`}
         onClick={() => {
@@ -115,7 +117,7 @@ export default function Carousel({ content }) {
         }}
       >
         <svg
-          class="h-8 w-8 hover:scale-110 transition-all"
+          className="h-8 w-8 hover:scale-110 transition-all"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"

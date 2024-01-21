@@ -17,7 +17,10 @@ export default function Hero() {
     speed: -40,
   });
   return (
-    <div className="text-white relative overflow-hidden min-w-full min-h-screen flex justify-center items-center lg:p-12 max-lg:p-6">
+    <div
+      id="about"
+      className="text-white relative overflow-hidden min-w-full min-h-screen flex justify-center items-center lg:p-12 max-lg:p-6"
+    >
       <Image
         ref={image.ref}
         src="/portfoliobg.jpg"
@@ -32,18 +35,20 @@ export default function Hero() {
       />
       <div className="min-h-full z-20 min-w-full to-95% bottom-0 left-0 absolute bg-gradient-to-b from-transparent to-black" />
       <div
-        className="flex lg:flex-col max-lg:flex-col justify-between min-w-full items-center z-20 gap-20"
+        className="mt-60 flex lg:flex-col max-lg:flex-col justify-between min-w-full items-center z-20 gap-100"
         ref={headerRef.ref}
       >
         <div className="flex lg:flex-col max-lg:flex-row justify-start items-start min-w-full">
           <VertAnimation>
-            <div className="flex flex-col">
-              <p className={`${brush.className} text-4xl italic pl-2`}>
+            <div className="flex flex-col ">
+              <p className={`text-4xl italic pl-2 text-secondary-light`}>
                 Full Stack
               </p>
               <h1 className="md:text-[10rem] max-md:text-6xl uppercase tracking-tighter leading-[1]">
                 DEVELOPER{" "}
-                <span className={`${brush.className} text-4xl italic`}>&</span>
+                <span className={` text-4xl italic text-secondary-light`}>
+                  &
+                </span>
               </h1>
               <h1 className="md:text-[10rem] max-md:text-6xl uppercase tracking-tighter leading-[1]">
                 DESIGNER
