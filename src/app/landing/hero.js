@@ -35,7 +35,7 @@ export default function Hero() {
       />
       <div className="min-h-full z-20 min-w-full to-95% bottom-0 left-0 absolute bg-gradient-to-b from-transparent to-black" />
       <div
-        className="mt-60 flex lg:flex-col max-lg:flex-col justify-between min-w-full items-center z-20 gap-100"
+        className="mt-60 flex lg:flex-col max-lg:flex-col justify-between max-2xl:min-w-full 2xl:min-w-[1480px] 2xl:max-w-[1480px] items-center z-20 gap-100"
         ref={headerRef.ref}
       >
         <div className="flex lg:flex-col max-lg:flex-row justify-start items-start min-w-full">
@@ -59,10 +59,9 @@ export default function Hero() {
         <div className="md:text-2xl max-md:text-base uppercase min-w-full lg:text-right lg:max-w-[30rem] max-h-screen flex items-end justify-end">
           <VertAnimation delay={0.5}>
             <p className="lg:max-w-[30rem] leading-8">
-              Here is a description of what I do and who I am briefly. Here is a
-              description of what I do and who I am briefly. Here is a
-              description of what I do and who I am briefly. Here is a
-              description of what I do and who I am briefly
+              Senior full-stack dev & UX/UI designer based in Colorado. I
+              quickly transform complex problems into intuitive, lightning-fast
+              apps that captivate users and crush performance goals.
             </p>
           </VertAnimation>
         </div>

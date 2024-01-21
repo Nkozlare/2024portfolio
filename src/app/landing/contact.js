@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Contact() {
   return (
     <section
@@ -43,33 +45,40 @@ export default function Contact() {
               <line x1="15" y1="8" x2="19" y2="12" />
             </svg>
             <div className="flex flex-row gap-8 text-secondary-light ">
-              <svg
-                className="h-6 w-6 hover:scale-110 transition-all hover:text-text"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
+              <Link
+                href="https://www.linkedin.com/in/nicholas-kozlarek/"
+                target="_blank"
               >
-                {" "}
-                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />{" "}
-                <rect x="2" y="9" width="4" height="12" />{" "}
-                <circle cx="4" cy="4" r="2" />
-              </svg>
-              <svg
-                className="h-6 w-6 hover:scale-110 transition-all hover:text-text"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
+                <svg
+                  className="h-6 w-6 hover:scale-110 transition-all hover:text-text"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M3 19v-8.93a2 2 0 01.89-1.664l7-4.666a2 2 0 012.22 0l7 4.666A2 2 0 0121 10.07V19M3 19a2 2 0 002 2h14a2 2 0 002-2M3 19l6.75-4.5M21 19l-6.75-4.5M3 10l6.75 4.5M21 10l-6.75 4.5m0 0l-1.14.76a2 2 0 01-2.22 0l-1.14-.76"
-                />
-              </svg>
+                >
+                  {" "}
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />{" "}
+                  <rect x="2" y="9" width="4" height="12" />{" "}
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+              </Link>
+              <a href="mailto:kozlareknicholas@gmail.com">
+                <svg
+                  className="h-6 w-6 hover:scale-110 transition-all hover:text-text"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M3 19v-8.93a2 2 0 01.89-1.664l7-4.666a2 2 0 012.22 0l7 4.666A2 2 0 0121 10.07V19M3 19a2 2 0 002 2h14a2 2 0 002-2M3 19l6.75-4.5M21 19l-6.75-4.5M3 10l6.75 4.5M21 10l-6.75 4.5m0 0l-1.14.76a2 2 0 01-2.22 0l-1.14-.76"
+                  />
+                </svg>
+              </a>
             </div>
           </div>
         </div>

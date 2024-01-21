@@ -17,7 +17,7 @@ function Item({ item, activeIndex, i, hover, setHover }) {
       <div
         className={`${
           !hover ? "text-text" : "text-transparent"
-        } transition-all absolute bottom-0 right-0 duration-500 z-20 text-right max-md:max-w-[80vw] md:max-w-[60vw]`}
+        } transition-all absolute bottom-0 right-0  duration-500 z-20 text-right max-md:max-w-[80vw] md:max-w-[60vw]`}
       >
         <p className="z-20 text-4xl uppercase">{item.title}</p>
         <p className="z-20 text-xl">{item.desc}</p>
@@ -53,7 +53,7 @@ export default function Carousel({ content }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [hover, setHover] = useState(false);
   return (
-    <div className="relative min-w-full">
+    <div className="relative max-2xl:min-w-full 2xl:min-w-[1480px] 2xl:max-w-[1480px]">
       <div className="min-w-full flex flex-col overflow-hidden pb-24">
         <div
           className="flex flex-row min-w-full transition-all duration-300 ease-in"

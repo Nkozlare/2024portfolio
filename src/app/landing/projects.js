@@ -10,7 +10,7 @@ export default function Projects({ selectedProject, setSelectedProject }) {
       title: "INSTRUCTOR",
       desc: "Instructor offers personalized, hands-on training delivered one-on-one, at lightning speed. It is a modern learning management software designed to teach new employees to tackle real-world projects, and master skills in record time. It is currently hiding behind an authenticaition wall, watch the demo to get an idea of what it is.",
       image: "/teach.jpg",
-      video: "",
+      video: "/demo.mp4",
       role: "Built the entire app front to back",
       url: "",
       fun: "Watch Demo",
@@ -22,7 +22,7 @@ export default function Projects({ selectedProject, setSelectedProject }) {
       video: "",
       role: "UI/UX development",
       url: "https://villagetours.a-suite.app/",
-      fun: "View subdomain for Village Tours",
+      fun: "View subdomain for Village Travel",
     },
     {
       title: "ACCELERATED AUTOMATION",

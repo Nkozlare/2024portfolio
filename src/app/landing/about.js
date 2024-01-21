@@ -19,7 +19,7 @@ export default function About() {
     },
     {
       title: "My wife and myself",
-      desc: "A not-as-tall triathlete nerd that is better at climbing fake rocks. We like to travel (She placed second in this triathlon).",
+      desc: "A not-as-tall triathlete nerd that is better at climbing fake rocks than I am. We like to travel. (She placed second in this triathlon).",
       image: "/us.jpeg",
     },
     {
@@ -29,7 +29,7 @@ export default function About() {
     },
     {
       title: "Music",
-      desc: "I am a has-been musician. I use to be in bands you have never heard of. 'What I lack in skill I make up for in intensity' -Jack Black",
+      desc: "I am a mediocre musician. I use to be in bands you have never heard of. 'What I lack in skill I make up for in intensity' -Jack Black",
       image: "/guitar.jpeg",
     },
   ];
