@@ -35,9 +35,38 @@ export default function Hero() {
       />
       <div className="min-h-full z-20 min-w-full to-95% bottom-0 left-0 absolute bg-gradient-to-b from-transparent to-black" />
       <div
-        className="mt-60 flex lg:flex-col max-lg:flex-col justify-between max-2xl:min-w-full 2xl:min-w-[1480px] 2xl:max-w-[1480px] items-center z-20 gap-100"
+        className=" max-lg:hidden mt-60 flex lg:flex-col max-lg:flex-col justify-between max-2xl:min-w-full 2xl:min-w-[1480px] 2xl:max-w-[1480px] items-center z-20 gap-100"
         ref={headerRef.ref}
       >
+        <div className="flex lg:flex-col max-lg:flex-row justify-start items-start min-w-full">
+          <VertAnimation>
+            <div className="flex flex-col ">
+              <p className={`text-4xl italic pl-2 text-secondary-light`}>
+                Full Stack
+              </p>
+              <h1 className="md:text-[10rem] max-md:text-6xl uppercase tracking-tighter leading-[1]">
+                DEVELOPER{" "}
+                <span className={` text-4xl italic text-secondary-light`}>
+                  &
+                </span>
+              </h1>
+              <h1 className="md:text-[10rem] max-md:text-6xl uppercase tracking-tighter leading-[1]">
+                DESIGNER
+              </h1>
+            </div>
+          </VertAnimation>
+        </div>
+        <div className="md:text-2xl max-md:text-base uppercase min-w-full lg:text-right lg:max-w-[30rem] max-h-screen flex items-end justify-end">
+          <VertAnimation delay={0.5}>
+            <p className="lg:max-w-[30rem] leading-8">
+              Senior full-stack dev & UX/UI designer based in Colorado. I
+              quickly transform complex problems into intuitive, lightning-fast
+              apps that captivate users and crush performance goals.
+            </p>
+          </VertAnimation>
+        </div>
+      </div>
+      <div className="lg:hidden mt-30 flex lg:flex-col max-lg:flex-col justify-between max-2xl:min-w-full 2xl:min-w-[1480px] 2xl:max-w-[1480px] items-center z-20 gap-100">
         <div className="flex lg:flex-col max-lg:flex-row justify-start items-start min-w-full">
           <VertAnimation>
             <div className="flex flex-col ">

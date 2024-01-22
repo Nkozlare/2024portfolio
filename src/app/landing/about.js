@@ -12,7 +12,7 @@ export default function About() {
   let content = [
     {
       title: "Me",
-      desc: "A 6'3 nerd that drinks coffee, plays WoW, climbs fake indoor rocks and plays volleyball.",
+      desc: "A 6'3 nerd who drinks coffee, plays WoW, climbs fake indoor rocks and plays volleyball.",
       image: "/me.jpeg",
       alt: "A profile picture of Nick Kozlarek",
     },
@@ -23,14 +23,14 @@ export default function About() {
       alt: "A picture of Molly Kozlarek in Triathlon gear",
     },
     {
-      title: "My dog",
+      title: "Pengu",
       desc: "A border collie mutt that understands a shocking amount of english. We got him while we were staying in Southern Africa.",
       image: "/dog.jpeg",
       alt: "a picture of a border collie mix",
     },
     {
       title: "Music",
-      desc: "I am a mediocre musician. I use to be in bands you have never heard of. 'What I lack in skill I make up for in intensity' -Jack Black",
+      desc: "I am a mediocre musician. I used to be in bands you have never heard of. 'What I lack in skill I make up for in intensity' -Jack Black",
       image: "/guitar.jpeg",
       alt: "Nick Kozlarek playing the guitar and singing",
     },

@@ -17,10 +17,10 @@ function Item({ item, activeIndex, i, hover, setHover }) {
       <div
         className={`${
           !hover ? "text-text" : "text-transparent"
-        } transition-all absolute bottom-0 right-0  duration-500 z-20 text-right max-md:max-w-[80vw] md:max-w-[60vw]`}
+        } transition-all absolute lg:p-12 max-lg:p-2 bottom-0 right-0  duration-500 z-20 text-right max-md:max-w-[80vw] md:max-w-[60vw]`}
       >
         <p className="z-20 text-4xl uppercase">{item.title}</p>
-        <p className="z-20 text-xl">{item.desc}</p>
+        <p className="z-20 lg:text-xl max-lg:text-base">{item.desc}</p>
       </div>
       <Image
         src={item.image}
@@ -35,7 +35,7 @@ function Item({ item, activeIndex, i, hover, setHover }) {
         }`}
       ></div>
       <div
-        className={`min-w-[100vw] min-h-[500rem] absolute bg-black duration-500 z-10 origin-bottom-left transition-all ${
+        className={`min-w-[100vw] min-h-[500rem] absolute bg-teal-900/90 duration-500 z-10 origin-bottom-left transition-all ${
           !hover ? "lg:rotate-[75deg] max-lg:rotate-[45deg]" : "rotate-90"
         }`}
       ></div>
